@@ -18,7 +18,8 @@ after_success:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # Take those images and push them to docker hub
-# adding a comment 45
+# adding a comment 47
+
 
 - docker push lwalton99/multi-client
 - docker push lwalton99/multi-nginx
