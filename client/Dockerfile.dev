@@ -2,5 +2,6 @@ FROM node:16-alpine
 WORKDIR '/app'
 COPY ./package.json ./
 RUN npm install 
+RUN npm install --save-dev @babel/plugin-transform-private-property-in-object
 COPY . .
 CMD ["npm","run","start"]
